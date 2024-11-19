@@ -1,0 +1,125 @@
+.header {
+    height: 39vw;
+    margin: 10px auto;
+    background: url('https://b.zmtcdn.com/web_assets/81f3ff974d82520780078ba1cfbd453a1583259680.png') no-repeat;
+    background-size: contain;
+    position: relative;
+    margin-top: -5px;
+}
+
+.header-content {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    gap: 10px;
+    max-width: 50%;
+    bottom: 9%;
+    left: 6%;
+    animation: FadeIn 3s;
+}
+
+.header-content h2 {
+    color: white;
+    font-size: 2rem;
+    font-weight: 700;
+}
+
+.header-content h1 {
+    color: white;
+    font-size: 4rem;
+    color: white;
+    margin-top: -10px;
+    font-weight: 800;
+}
+
+.header-content p {
+    color: white;
+    margin-top: -10px;
+    font-size: 1.2rem;
+}
+
+.header-content button {
+    background-color: white;
+    padding: 15px 40px;
+    margin-top: 10px;
+    border: none;
+    transform: scale(1);
+    transition: 0.6s;
+    border-radius: 50px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.header-content button:hover {
+    transform: scale(1.1);
+}
+
+@media (max-width:1050px) {
+
+    .header-content {
+        max-width: 45%;
+    }
+
+    .header-content p {
+        font-size: 14px;
+    }
+
+    .header-content h1 {
+        font-size: 44px;
+    }
+}
+
+@media (max-width:950px) {
+    .header-content {
+        max-width: 55%;
+    }
+
+    .header-content p {
+        display: none;
+    }
+
+    .header-content button {
+        padding: 10px 30px;
+    }
+}
+
+@media (max-width:550px) {
+    .header-content {
+        max-width: 65%;
+    }
+
+    .header-content h1 {
+        font-size: 24px;
+    }
+
+    .header-content button {
+        padding: 6px 8px;
+        font-size: 12px;
+        margin-top: 0px;
+    }
+}
+
+@media (max-width:450px) {
+    .header {
+        margin-top: -5px;
+    }
+    .header-content {
+        max-width: 100%;
+        gap: 2px;
+        bottom: 15%;
+        left: 8%;
+    }
+
+    .header-content h1 {
+        font-size: 22px;
+        margin-top: 0px;
+    }
+    .header-content h2 {
+        font-size: 26px;
+    }
+
+    .header-content button {
+        display: none;
+    }
+}

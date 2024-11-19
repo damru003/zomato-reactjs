@@ -1,0 +1,154 @@
+.login-popup {
+    position: absolute;
+    z-index: 1;
+    background:transparent;
+    padding: 300px 600px;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    animation: FadeIn 1s;
+    right: 2%;
+    top: -90px;
+    backdrop-filter: blur(5px);
+}
+
+.login-popup-container {
+    width: 25rem;
+    color: #808080;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    padding: 25px 30px;
+    border-radius: 10px;
+    font-size: 14px;
+    animation: FadeIn 1s;
+    border: 2px solid #cb202d;
+}
+
+.login-popup-title {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: #cb202d;
+    font-size: 20px;
+}
+
+.login-popup-title img {
+    width: 18px;
+    cursor: pointer;
+}
+
+.login-popup-inputs {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.login-popup-inputs input {
+    outline: none;
+    border: 1px solid #c9c9c9;
+    padding: 10px;
+    border-radius: 4px;
+}
+
+.login-popup-container button {
+    border: none;
+    background-color: #cb202d;
+    color: white;
+    padding: 10px 30px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.login-popup-condition {
+    display: flex;
+    align-items: start;
+    gap: 10px;
+    margin-top: -10px;
+}
+.login-popup-condition p {
+    margin-top: -3px;
+}
+
+.login-popup p span {
+    color: #cb202d;
+    font-weight: 500;
+    cursor: pointer;
+}
+
+
+@media (max-width:1280px) {
+    .login-popup {
+        position: absolute;
+        z-index: 1;
+        background:transparent;
+        padding: 400px 350px;
+        display: grid;
+        justify-content: center;
+        align-items: center;
+        top: -90px;
+        backdrop-filter: blur(5px);
+    }
+}
+
+@media (max-width:1050px) {
+    .login-popup {
+        position: absolute;
+        z-index: 1;
+        background:transparent;
+        padding: 300px 300px;
+        display: grid;
+        justify-content: center;
+        align-items: center;
+        right: 10%;
+        top: -90px;
+        backdrop-filter: blur(5px);
+    }
+}
+
+@media (max-width:730px) {
+    .login-popup {
+        position: absolute;
+        z-index: 1;
+        background:transparent;
+        padding: 300px 300px;
+        display: grid;
+        justify-content: center;
+        align-items: center;
+        right: 0%;
+        top: -90px;
+        backdrop-filter: blur(5px);
+    }
+}
+
+@media (max-width:620px) {
+    .login-popup {
+        position: absolute;
+        z-index: 1;
+        background:transparent;
+        padding: 300px 300px;
+        display: grid;
+        justify-content: center;
+        align-items: center;
+        right: -30%;
+        top: -90px;
+        backdrop-filter: blur(5px);
+    }
+}
+
+@media (max-width:440px) {
+    .login-popup {
+        position: absolute;
+        z-index: 1;
+        background:transparent;
+        padding: 500px 0px;
+        display: grid;
+        justify-content: center;
+        align-items: center;
+        right: 3%;
+        top: -25%;
+        backdrop-filter: blur(5px);
+    }
+}
